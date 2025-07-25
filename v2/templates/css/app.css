@@ -1,0 +1,136 @@
+.container {
+    max-width: 800px;
+}
+
+label{
+    display: none;
+}
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding-bottom: 5rem;
+}
+
+.icon-link > .bi {
+    width: .75em;
+    height: .75em;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.form-control, select, .btn-light{
+    background-color: transparent!important;
+}
+
+.site-header {
+    background-color: rgba(255,255,255, .85)!important;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.flex-equal > * {
+    flex: 1;
+}
+@media (min-width: 768px) {
+    .flex-md-equal > * {
+        flex: 1;
+    }
+}
+
+/**
+Navbar
+ */
+
+.nav-link.active {
+    color: #294a70 !important;
+}
+
+#navbar-bottom {
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/**
+Top_filter
+ */
+.collapse-box {
+    overflow: hidden;
+    width: 100%;
+    max-height: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+
+.slide-container {
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    width: 100%;
+}
+
+#sliderWrapper {
+    display: flex;
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    width: 100%;
+}
+
+.transition-slide {
+    flex: 0 0 100%; /* Jede Slide genau 100% der Breite */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.transition-slide > div {
+    flex: 0 0 100%;
+}
+
+.active-button {
+    font-weight: 500;
+}
+
+input:focus, select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/**
+Colors
+ */
+
+:root {
+    --bs-primary: #294a70;
+    --bs-primary-rgb: 41, 74, 112;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #203b5a !important; /* dunklere Variante */
+    border-color: #203b5a !important;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
