@@ -24,8 +24,23 @@ body {
  * Custom translucent site header
  */
 
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
 .form-control, select, .btn-light{
-    background-color: transparent!important;
+    background-color: rgba(255,255,255,.6)!important;
+}
+
+.btn-light{
+    color: var(--bs-gray-700);
+    border: none;
+    font-weight: normal!important;
+}
+
+.btn-light:focus:not(.active-button){
+    color: var(--bs-gray-700)!important;
 }
 
 .site-header {
@@ -98,8 +113,10 @@ Top_filter
 }
 
 .active-button {
-    font-weight: 500;
+    color: var(--bs-black);
+    font-weight: 500!important;
 }
+
 
 input:focus, select:focus {
     outline: none !important;
