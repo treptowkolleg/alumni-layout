@@ -4,7 +4,7 @@
     const threshold = 70;
 
     document.querySelectorAll('.slim-select').forEach((el) => {
-
+        // init each select
     });
 
     if (navbar) {
