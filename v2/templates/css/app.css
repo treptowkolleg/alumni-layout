@@ -102,6 +102,10 @@ Top_filter
     width: 100%;
 }
 
+.accordion-body{
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1)!important;
+}
+
 .transition-slide {
     flex: 0 0 100%; /* Jede Slide genau 100% der Breite */
     max-width: 100%;
