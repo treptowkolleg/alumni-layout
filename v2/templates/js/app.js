@@ -1,7 +1,7 @@
 (function () {
     let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const navbar = document.getElementById("navbar-bottom");
-    const threshold = 100;
+    const threshold = 70;
 
     document.querySelectorAll('.slim-select').forEach((el) => {
 
